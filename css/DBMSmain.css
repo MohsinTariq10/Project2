@@ -1,0 +1,178 @@
+html, body{
+        font-family: 'Lato', sans-serif;
+        font-weight: 300px;
+        font-size: 16px;
+        line-height: 1.7;
+        background-color: #eeefe9;
+      }
+      h1,h2,h3,h4{
+        font-family: 'Abel', sans-serif;
+      }
+      .carousel-caption{
+        z-index: 10;
+      }
+      .carousel-inner>.item>img{
+        position: relative;
+        padding-top: 0px;
+        left: 0;
+        margin: 0px;
+        min-width: 100%;
+        height: auto;
+      }
+      .carousel-inner>.item{
+        margin: 0px;
+        padding-top: 0px;
+        height: 500px;
+      }
+      .intro-block{
+        background-color: #107a99;
+        padding: 10px 5px;
+        color: #fff;
+      }
+      .text-muted{
+        color: #e9e6df;
+        font-weight: 100;
+      }
+      .padded{
+       padding: 0px 15px; 
+      }
+      .marketing{
+        padding-top: 20px;
+        background-color: #e9e6df;
+      }
+      hr{
+        border-top: 2px solid #7a3878;
+      }
+      .info{
+        background: #ffa753 url(./img/skyline.png) repeat-x bottom;
+        padding: 80px 0;
+      }
+      .ftr{
+        background-color: #107a99;
+      }
+      .ft_space{
+        padding: 5px 5px;
+      }
+      @media(min-width: 768px){
+        .carousel-inner>.item{
+          height: 500px;
+        }
+      }
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+        display: table;
+        width: 100%;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 15%;
+        float: none;
+      }
+      .navbar .nav .dropdown-menu li{
+         display: list-item;
+      }
+      .sidebar-nav {
+         padding: 9px 0;
+      }
+
+    .dropdown-menu .sub-menu {
+      left: 100%;
+      position: absolute;
+      top: 0;
+      visibility: hidden;
+      margin-top: -1px;
+    }
+
+    .dropdown-menu li:hover .sub-menu {
+      visibility: visible;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+
+    
+    }
+
+    .nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+      margin-top: 0;
+    }
+    .panel .panel-heading{
+      background-color: #107a99;
+      border: 1px solid #107a99;
+    }
+    .panel-title{
+      font-size: 20px;
+    }
+    .dropdown-menu > li > a {
+    
+      padding: 10px 20px;
+      clear: both;
+      font-weight:normal;
+      color: #107a99;
+    }
+    .dropdown-menu > li > a:hover,
+    .dropdown-menu > li > a:focus {
+      color: #107a99;
+      background-color: rgba(111,111,111,0.15);
+      text-decoration: none;
+      border-top: 1px solid #107a99;
+      border-bottom: 1px solid #107a99;
+      display: inline-block;
+    }
+    .dropdown-menu > .active > a,
+    .dropdown-menu > .active > a:hover,
+    .dropdown-menu > .active > a:focus {
+      color: #107a99;
+      text-decoration: none;
+      background-color: #107a99;
+      outline: 0;
+    }
+    .dropdown-menu > .disabled > a,
+    .dropdown-menu > .disabled > a:hover,
+    .dropdown-menu > .disabled > a:focus {
+      color: #107a99;
+    }
+    .btn-xlarge {
+      padding: 12px 20px;
+      font-size: 15px;
+      line-height: normal;
+    }
+    .TABS{  
+      padding: 10px;
+      
+      background-color: #e9e6df;
+      text-align: left;
+    }
+    
+    .TABS .btn-xxlarge{
+      display:inline-block;
+      width:185px;
+      margin: 0px;
+      padding: 10px 2px 10px 10px;
+      text-align: center;
+      border: 1px solid black;
+      background: #107a99;
+      opacity:0.8;
+      /*-webkit-border-radius:25px;*/
+      -webkit-box-shadow: rgb(110,110,110) 8px 8px 8px;
+      -webkit-transition: -webkit-transform 1s, opacity 2s; 
+      font:20px Abel;
+      color:white;
+      /*text-shadow:rgb(110,110,110) 2px 2px 4px;*/
+    }
+
+    .btn-xxlarge:hover{
+      opacity:1;
+      -webkit-transform:rotate(3deg);
+    }
+    .col-xs-4 .panel-title{
+      font-size: 15px;
+    }
+    .panel .panel-body{
+      margin:0px;
+      padding: 0px;
+      border: 1px solid #107a99;
+    }
