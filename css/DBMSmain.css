@@ -34,7 +34,7 @@ html, body{
         font-weight: 100;
       }
       .padded{
-       padding: 0px 15px; 
+       padding: 0px 15px;
       }
       .marketing{
         padding-top: 20px;
@@ -93,7 +93,7 @@ html, body{
     .dropdown:hover .dropdown-menu {
       display: block;
 
-    
+
     }
 
     .nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
@@ -107,7 +107,7 @@ html, body{
       font-size: 20px;
     }
     .dropdown-menu > li > a {
-    
+
       padding: 10px 20px;
       clear: both;
       font-weight:normal;
@@ -140,13 +140,13 @@ html, body{
       font-size: 15px;
       line-height: normal;
     }
-    .TABS{  
+    .TABS{
       padding: 10px;
-      
+
       background-color: #e9e6df;
       text-align: left;
     }
-    
+
     .TABS .btn-xxlarge{
       display:inline-block;
       width:185px;
@@ -158,7 +158,7 @@ html, body{
       opacity:0.8;
       /*-webkit-border-radius:25px;*/
       -webkit-box-shadow: rgb(110,110,110) 8px 8px 8px;
-      -webkit-transition: -webkit-transform 1s, opacity 2s; 
+      -webkit-transition: -webkit-transform 1s, opacity 2s;
       font:20px Abel;
       color:white;
       /*text-shadow:rgb(110,110,110) 2px 2px 4px;*/
