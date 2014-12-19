@@ -39,21 +39,21 @@ class=""
     <div class="container">
       <div class="row">
 
-        <div class="col-xs-2">
-          <img class="img-responsive tpad img-circle" src="img/logo.jpg">
+        <div class="col-sm-2 col-xs-7">
+          <img class="img-responsive tpad img-circle" src="img/UET_logo.png">
         </div>
 
-        <div class="col-xs-8">
+        <div class="col-sm-8 hidden-xs">
           <h1>Department of Computer Systems Engineering</h1>
-          <h2>University of Engineering & Technology, Peshawar</h2>
+          <h3>University of Engineering & Technology, Peshawar</h3>
 
          </div>
 
-        <div class="col-xs-2">
+        <div class="col-sm-1 col-xs-5 col-sm-offset-1">
         <?php if (!isset($_SESSION['user_id'])) : ?>
             <a href="login.php" style="text-decoration:none">
-                <h4 style="color:#f2e7f2">Login | Sign-up
-                    <span class="glyphicon glyphicon-user"style="color:white; font-size:20px"></span>
+                <h4 style="color:#f2e7f2">Login
+                    <span class="glyphicon glyphicon-user hidden-xs"style="color:white; font-size:20px"></span>
                 </h4>
             </a>
         <?php else:

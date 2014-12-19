@@ -29,6 +29,42 @@ html, body{
         padding: 10px 5px;
         color: #fff;
       }
+      .navbar-default .navbar-nav > li > a {
+         color: #107a99;
+      }
+      .navbar-default .navbar-brand:focus {
+        color: #107a99;
+          background-color: transparent;
+      }
+      .navbar-default .navbar-brand {
+          color: #107a99;
+      }
+
+      .login{
+        background-color: #107a99;
+        color: white;
+      }
+
+
+      .login:hover{
+        background-color: #E7E7E7;
+        color: red;
+      }
+
+
+      .navbar-default .navbar-nav > .open > a:focus {
+         color: #107a99;
+         background-color: #E7E7E7;
+      }
+      .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+          color: #107a99;
+      }
+
+      a:hover, a:focus {
+         color: #2A6496;
+         text-decoration: underline;
+      }
+
       .text-muted{
         color: #e9e6df;
         font-weight: 100;
@@ -54,10 +90,24 @@ html, body{
         padding: 5px 5px;
       }
       @media(min-width: 768px){
-        .carousel-inner>.item{
-          height: 500px;
-        }
-      }
+            .carousel-inner>.item{
+              height: 500px;
+            }
+
+          .dropdown-menu li:hover .sub-menu {
+            visibility: hidden;
+          }
+
+          .navbar .nav li {
+            display: table-cell;
+            width: 15%;
+            float: none;
+          }
+          .navbar .nav .dropdown-menu li{
+             display: list-item;
+          }
+      
+      
       .navbar .navbar-inner {
         padding: 0;
       }
@@ -65,14 +115,6 @@ html, body{
         margin: 0;
         display: table;
         width: 100%;
-      }
-      .navbar .nav li {
-        display: table-cell;
-        width: 15%;
-        float: none;
-      }
-      .navbar .nav .dropdown-menu li{
-         display: list-item;
       }
       .sidebar-nav {
          padding: 9px 0;
@@ -92,8 +134,6 @@ html, body{
 
     .dropdown:hover .dropdown-menu {
       display: block;
-
-
     }
 
     .nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
@@ -135,6 +175,10 @@ html, body{
     .dropdown-menu > .disabled > a:focus {
       color: #107a99;
     }
+
+
+}
+
     .btn-xlarge {
       padding: 12px 20px;
       font-size: 15px;
@@ -156,14 +200,15 @@ html, body{
       border: 1px solid black;
       background: #107a99;
       opacity:0.8;
-      /*-webkit-border-radius:25px;*/
+      /*-webkit-border-radius:25px;
       -webkit-box-shadow: rgb(110,110,110) 8px 8px 8px;
       -webkit-transition: -webkit-transform 1s, opacity 2s;
       font:20px Abel;
       color:white;
+      */
       /*text-shadow:rgb(110,110,110) 2px 2px 4px;*/
     }
-
+/*
     .btn-xxlarge:hover{
       opacity:1;
       -webkit-transform:rotate(3deg);
@@ -176,3 +221,4 @@ html, body{
       padding: 0px;
       border: 1px solid #107a99;
     }
+*/
