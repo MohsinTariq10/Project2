@@ -191,6 +191,46 @@ html, body{
       text-align: left;
     }
 
+
+/*--- Login css ---*/
+
+.row-color{
+    padding: 10px 10px 10px 10px;
+        background-color: #107A99;
+        color: white;
+  }
+  #login{
+    position: absolute;
+    top:0;
+    left:0;
+    color: #fff;
+    padding: 13px 40px 10px 40px;
+    font-family: 'Abel', sans-serif;
+    opacity: 0;
+    transition: opacity 1s;
+
+  }
+
+  #login:hover,.hoveredL{
+    opacity: 1;
+
+  }
+
+  .login-img{
+  display: inline;
+  opacity: 0.6;
+  transform: translate(30px,0px);
+  transition: transform 2s, opacity 2s;
+ }
+
+.login-img:hover,.hovered{
+  transform: rotate(-90deg) translate(0px,0px);
+  opacity: 1;
+ }
+
+/*----------------*/
+
+
     .TABS .btn-xxlarge{
       display:inline-block;
       width:185px;
