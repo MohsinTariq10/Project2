@@ -1,4 +1,4 @@
-<div class="navbar navbar-default color-text" role="navigation">
+<div id="theNav" class="navbar navbar-default color-text" role="navigation">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -52,4 +52,5 @@
           </ul>
     </div>
     </div>
+    <span id="navspan"></span>
   <!--End of Navigation -->

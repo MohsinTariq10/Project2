@@ -35,9 +35,9 @@ class=""
   </head>
   <body>
 
-  <div class="intro-block">
-    <div class="container">
-      <div class="row">
+  <div class="intro-block" id="rowHead" >
+    <div class="container" >
+      <div class="row" >
 
         <div class="col-sm-2 col-xs-8">
           <img class="img-responsive tpad uetlogo" src="img/UETlogo.png">
@@ -71,5 +71,5 @@ class=""
         
       </div>
     </div>
-  </div>
+  
   <!--END OF HEADER -->
