@@ -9,17 +9,21 @@ $(".row-color").on("mouseover", function(){
 });
 
 
- var $element = $("#rowHead").outerHeight();
  var $document = $(document);
  var $outerEle = $('#navspan');
  var $Nav = $('#theNav');
  var $navHeight = $Nav.outerHeight() + 20;
+ var $element = $("#rowHead").outerHeight() + $navHeight -20;
+
  var check=0;
 $document.scroll(function() {
   if ($document.scrollTop() >= $element) {
 		if(check==0){
 			$outerEle.append('<div id="new" style="height:' + $navHeight +'px" ></div>')
 		    $Nav.addClass("navbar-fixed-top");
+		    $Nav.hide();
+		    $Nav.fadeIn(600);
+		
 		    check=1;
 		}
 	  } else {
