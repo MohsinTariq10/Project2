@@ -1,0 +1,281 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="veiwport" content="width=device-width , initial-scale=1.0">
+ 	<title></title>
+ 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+ 	<script type="text/javascript" src="js/respond.js"></script>
+ 	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"> -->
+    <!--[if lt IE 9]>
+    	<script src="js/html5shiv.js"></script>
+    	<script src="js/respond.js"></script>
+    <![endif]-->
+
+ 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+ 	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+
+<style>
+	
+	body{
+		background-color: #107A99;
+		/*background-image: url("bck.png");*/
+	}
+	.uetlogo{
+		padding-left:75px;
+		padding-top: 100px;
+		position: relative;
+	}
+	.haha{
+		text-align: center;
+		text-transform: capitalize;
+		opacity: 0;
+		transform: translate(0px,-100px);
+		transition: transform 2s , opacity 2s;
+	}
+	.wel1{
+		text-align: center;
+		opacity: 0; 
+		transform: translate(0px,-100px);
+		transition: transform 2s , opacity 2s;
+	}
+	
+	.h3new{
+		opacity: 1;
+		transform: translate(0px,0px);
+	}
+
+	.h1new{
+		opacity: 1;
+		transform: translate(0px,200px);
+	}
+	.L{
+		padding-left: 60px;
+		position: absolute;
+		display: inline-block;
+	}
+	.L a{
+		color: #ffffff;
+		font-style: normal;
+	}
+	.L1{
+		text-align: center;
+		position: absolute;
+		color: #ffffff;
+		opacity: 0; 
+		transform: translate(0px,0px);
+		transition: transform 2s , opacity 2s;
+	}
+	.L1new{
+		opacity: 1;
+		transform: translate(-50px,0px);
+	}
+	.L2{
+		text-align: center;
+		position: absolute;
+		color: #ffffff;
+		opacity: 0; 
+		transform: translate(0px,0px);
+		transition: transform 2s , opacity 2s;
+	}
+	.L2new{
+		opacity: 1;
+		transform: translate(50px,0px);
+	}
+	.L3{
+		text-align: center;
+		position: absolute;
+		font-size: 30px;
+		opacity: 0; 
+		transform: translate(18px,-50px);
+		transition: transform 2s , opacity 2s;
+	}
+	.L3new{
+		opacity: 1;
+		transform: translate(18px,-15px);
+	}
+
+	.row{
+		padding: 10px 10px 10px 10px;
+        color: white;
+	}
+	
+	@media screen and (max-width: 500px) {
+		
+	.uetlogo{
+		padding-left:30px;
+		padding-top: 0px;
+		position: relative;
+	}
+	}
+
+	.uetlogo1{
+		position: absolute;
+	 	/*transform: translate(30px,0px);*/
+	 	opacity: 0;
+	 	transition: transform 4s, opacity 2s;
+	}
+	.uetlogo2{
+		position: absolute;
+		opacity: 0;
+	 	/*transform: translate(30px,0px);*/
+	 	transition: transform 4s, opacity 2s;
+	}
+	.uetlogo3{
+		position: absolute;
+		opacity: 0;
+	 	/*transform: translate(30px,0px);*/
+	 	transition: transform 4s, opacity 2s;
+	}
+/*
+	#uetlogo1,#uetlogo2,#uetlogo3{
+		position: absolute;
+		transition: transform 2s;
+	}*/
+	
+	.uetrotateL{
+		opacity: 1;
+		transform: rotate(-360deg) translate(0px,0px);
+	}
+
+	.uetrotateR{
+		opacity: 1;
+		transform: rotate(360deg) translate(0px,0px);
+	}
+
+	.visible{
+		/*transform: translate(0px,0px);*/
+		opacity: 1;
+	}
+
+	.hi{
+		height:100px;
+	}	
+	#lgVs{
+		font-size:32px;
+		color: #ffffff;
+	}
+	.lgVs1{
+		font-size:16px;
+		font-style: none;
+		padding: 20px;
+		color: #ffffff;
+		opacity: 0;
+		transform:translate(30px,0px);
+		transition: transform 2s opacity 2s;
+	}
+	.lgVs2{
+		font-size:16px;
+		font-style: none;
+		padding: 20px;
+		color: #ffffff;
+		opacity: 0;
+		transform:translate(-30px,0px);
+		transition: transform 2s opacity 2s;
+	}
+</style>
+
+<script type="text/javascript">
+		$('document').ready(function(){
+			// $( ".login" ).hide();
+			//alert("messi :p")
+			//jQuery('div').html("my name is khan");
+			// alert($("body").outerHeight());
+			// // alert($("body").outerWidth());
+			// 	$("#uetlogo1").toggleClass("center");
+			// 	$("#uetlogo2").toggleClass("center");
+			// 	$("#uetlogo3").toggleClass("center");
+			// 	$("#uetlogo1").toggleClass("center");
+			// 	$("#uetlogo2").toggleClass("center");
+			// 	$("#uetlogo3").toggleClass("center");
+				
+
+				// $(".haha").toggleClass("h3new");
+
+
+
+				  $('.wel1').addClass("h1new");
+				  
+				  setTimeout(function(){
+					  $(".aa").fadeOut('4000');
+					}, 3000);
+
+				setTimeout(function(){
+				$('.haha').addClass("h3new");
+				$(".uetlogo1").toggleClass("uetrotateL");
+				$(".uetlogo2").toggleClass("uetrotateR");
+				$(".uetlogo3").addClass("visible");
+				$(".uetlogo1").css( "opacity", "1" );
+				$(".uetlogo2").css( "opacity", "1" );
+				
+
+
+				  // $('.L1').addClass("L1new");
+				  // $('.L2').addClass("L2new");
+				  // $('.L3').addClass("L3new");
+
+				}, 4000);
+
+				setTimeout(function  () {
+				  $('.L3').addClass("L3new");
+				},6000);
+				setTimeout(function  () {
+				  $('.L1').addClass("L1new");
+				  $('.L2').addClass("L2new");
+
+				  $(".Mainlogo").on("mouseover", function(){
+					// console.log("messi");
+					$(".uetlogo1").toggleClass("uetrotateL");
+					$(".uetlogo2").toggleClass("uetrotateR");
+				}
+				).on("mouseout",function(){
+					$(".uetlogo1").toggleClass("uetrotateL");
+					$(".uetlogo2").toggleClass("uetrotateR");
+				});
+
+				},8000);
+
+				
+
+
+	});
+	</script>
+ </head>
+
+ <body>
+ <div class="container">
+	<div class="row">
+		<div class="aa col-sm-6 col-sm-offset-3">
+				<h1 class="wel1">WELCOME</h1>
+		</div>
+	</div> 
+	<div class="hi aa"></div>
+	<div class="row">
+ 		<div class="Mainlogo col-sm-1 col-sm-offset-4 col-xs-1">
+ 			<div class="uetlogo">
+	 			<img class="uetlogo1" src="img/UETani1.png">
+	 			<img class="uetlogo2" src="img/UETani2.png">
+	 			<img class="uetlogo3" src="img/UETani3.png">
+ 			</div>
+ 		</div>
+	</div>
+	<div class="hi"></div>
+	<div class="hi"></div>
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+				<h3 class="haha">DEPARTMENT OF COMPUTER SYSTEMS ENGINEERING</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-5 col-xs-4 col-xs-offset-2">
+			<div class="L">
+				<div class="L1"><a href="index1.html">LOGIN</a></div>
+				<div class="L3">|</div>
+				<div class="L2"><a href="">VISIT</a></div>
+			</div>
+		</div>
+	</div>
+ </div>
+ </body>
+ </html>

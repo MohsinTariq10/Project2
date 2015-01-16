@@ -30,7 +30,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student</a>
               <ul class="dropdown-menu">
-                <li><a href="Login-form.html">Student Login</a></li>
+                <li><a href="login.php">Student Login</a></li>
                 <li><a href="#">Activities</a></li>
                 <li><a href="#">Academic Calendar</a></li>
                 <li><a href="#">Club and Societies</a></li>
@@ -41,14 +41,11 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Faculty</a>
               <ul class="dropdown-menu">
-                <li><a href="#">Faculty Login</a></li>
+                <li><a href="facultylogin.php">Faculty Login</a></li>
                 <li><a href="#">Faculty Details</a></li>
+                <li><a href="facultyreg.php">Faculty Registration</a></li>
               </ul>
               </li>
-            <li><a href="#">Research</a></li>
-            <!--drop down menu -->
-            <li><a href="#">Alumni</a></li>
-            <!--drop down menu -->
           </ul>
     </div>
     </div>

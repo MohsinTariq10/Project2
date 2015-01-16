@@ -85,6 +85,11 @@ html, body{
       }
       .ftr{
         background-color: #107a99;
+        width:100%;
+        height:40px;
+        position:absolute;
+        bottom:0px;
+        left:0;
       }
       .ft_space{
         padding: 5px 5px;
@@ -195,7 +200,7 @@ html, body{
 /*--- Login css ---*/
 
 .row-color{
-    padding: 10px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
         color: white;
   }
   #login{
@@ -207,7 +212,6 @@ html, body{
     font-family: 'Abel', sans-serif;
     opacity: 0;
     transition: opacity 1s;
-
   }
 
   #login:hover,.hoveredL{
@@ -228,7 +232,7 @@ html, body{
  }
 
 /*----------------*/
-
+    
 
     .TABS .btn-xxlarge{
       display:inline-block;

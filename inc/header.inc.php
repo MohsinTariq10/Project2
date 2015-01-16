@@ -25,13 +25,10 @@ class=""
     <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/DBMSmain.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.js"></script>
-    <![endif]-->
+    <link href="css/login-form.css" rel="stylesheet">
+    <script type="text/javascript" href="js/jquery-2.1.1.min"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </head>
   <body>
 
@@ -46,9 +43,8 @@ class=""
         <div class="col-sm-9 hidden-xs">
           <h3>Department of Computer Systems Engineering</h3>
           <h4>University of Engineering & Technology, Peshawar</h4>
-
-         </div>
-
+        </div>
+        
  
             <div class=" col-sm-1 row-color col-xs-1">
             <?php if (!isset($_SESSION['user_id'])) : ?>
