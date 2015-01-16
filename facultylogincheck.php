@@ -1,22 +1,20 @@
 <?php
- 	include_once('database/connection.php');
-
- 	if(isset($_GET['SN']) && isset($_GET['pass']))
- 	{
- 		$SN = (int)$_GET['SN'];
- 		$pass = $_GET['pass'];
- 	}
-
- 	$check="SELECT fName FROM fac WHERE fId={$SN}";
- 	$res=$conn->query($check);
-
- 	if (!$res) {
-		echo "Error running query: " . mysql_error($conn);
- 	}
-
- 	if($res->num_rows>0){
- 		echo "Yes";
- 	}
- 	else
- 		echo "No";
+	include 'database/connection.php';
+    session_start();
+    if (isset($_POST['submit'])) {	
+		$SN=$_POST['fServiceNo'];
+		$PS=$_POST['fPassword'];
+		$q = "SELECT * FROM fac WHERE fId='{$SN}' AND fPassword='{$PS}'";
+		$r=$conn->query($q);
+		if ($r->num_rows > 0) {
+			$_SESSION['serviceno']=$SN; 
+			header("location: facultyprofile.php?SN=".$SN); 
+		}
+		else
+		{
+			header("location: facultylogin.php");
+			session_unset();
+		}
+	}
 ?>
+

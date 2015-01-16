@@ -1,47 +1,26 @@
 <?php
-    include 'database/connection.php';
     include 'inc/header.inc.php';
     include 'inc/navbar.inc.php';
 ?>
-<script>
-    $(document).ready(function(){ 
-        $("#submit").click(function(){
-          var sn= $("#fServiceNo").val();
-          var url = "facultypage.php?FS="+sn;
-          $.get(
-          './facultylogincheck.php',
-          { 'SN' : $("#fServiceNo").val(),'pass' : $("#fPassword").val()},
-          function(ajaxresult){
-            if(ajaxresult == 'Yes'){
-                $(location).attr('href',url);
-                }
-            else
-                alert("Invalid user name or password");
-          });
-        });
-    });
-</script>
-<?php
 
-?>
 <div class="container">
     <div class="row">
         <div id="formalign">
             <div class="form-wrap">
-                <form action="#" method="post" id="login-form" autocomplete="off">
+                <form action="facultylogincheck.php" method="post" id="login-form" autocomplete="off">
                     <div class="form-group">
                         <label for="input" class="sr-only">Service No</label>
-                        <input type="text" id="fServiceNo" class="form-control" placeholder="Service No">
+                        <input type="text" name="fServiceNo" class="form-control" placeholder="Service No">
                     </div>
                     <div class="form-group">
                         <label for="student_pass" class="sr-only">Password</label>
-                        <input type="password" id="fPassword" class="form-control" placeholder="Password">
+                        <input type="password" name="fPassword" id="fPassword" class="form-control" placeholder="Password">
                     </div>
                     <div class="checkbox">
                         <span class="character-checkbox" onclick="showPassword()"></span>
                         <span class="label">Show password</span>
                     </div>
-                    <input type="submit" class="btn btn-custom btn-lg btn-block" id="submit" value="submit">
+                    <input type="submit" class="btn btn-custom btn-lg btn-block" name="submit" value="submit">
                 </form>
             </div>
         </div> 
@@ -58,7 +37,6 @@
             $('#fPassword').attr('type', 'password');
         }
     }
-
 </script>
 
 <?php

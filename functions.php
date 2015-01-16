@@ -1,4 +1,5 @@
 <?php
+/*
 session_start();
 // including the config file
 define('SCRIPTBASE', $_SERVER['DOCUMENT_ROOT'] . '/Project/');
@@ -54,4 +55,5 @@ function dbAllRows($query,$bindings){
 // Login functions
 function login_redirect(){
 }
-
+*/
+?>
