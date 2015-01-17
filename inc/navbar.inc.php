@@ -23,14 +23,14 @@
                 <li><a href="#">Chairman Message</a></li>
                 <li><a href="#">Jobs</a></li>
                 <li><a href="#">Department MAP</a></li>
-                <li><a href="DBMS_googlemap.html">How to reach us</a></li>
+                <li><a href="#">How to reach us</a></li>
               </ul>
               </li>
             <!--drop down menu -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student</a>
               <ul class="dropdown-menu">
-                <li><a href="login.php">Student Login</a></li>
+                <li><a href="studentlogin.php">Student Login</a></li>
                 <li><a href="#">Activities</a></li>
                 <li><a href="#">Academic Calendar</a></li>
                 <li><a href="#">Club and Societies</a></li>

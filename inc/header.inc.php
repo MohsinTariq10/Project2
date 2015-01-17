@@ -1,17 +1,4 @@
-<?php
-    require $_SERVER['DOCUMENT_ROOT'] . '/Project/functions.php';
-?>
 
-<!-- <div class="clearfix hidden-md  hidden-lg"> </div>
-class="col-md-offset-4"
-class="col-md-4"
-<img src =".." class="img-responsive hidden-xs">
-<img src =".." class="img-responsive visible-xs">
-<a class="btn btn-large btn-default/primary/danger/link" href="#">Acha jee</a>
-class=""
-class=""
-#107a99;
--->
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -48,7 +35,7 @@ class=""
  
             <div class=" col-sm-1 row-color col-xs-1">
             <?php if (!isset($_SESSION['user_id'])) : ?>
-              <a class="loginHref" href="login.php"><img class="login-img" src="img/loginLOGO.png"><span id="login">Login</span></a>
+              <a class="loginHref" href="studentlogin.php"><img class="login-img" src="img/loginLOGO.png"><span id="login">Login</span></a>
             <?php else:
             echo $_SESSION['user_reg'];
             endif;

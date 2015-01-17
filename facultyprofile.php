@@ -1,12 +1,13 @@
 <?php
-    include 'session.php';
+    include 'f_session.php';
     include 'database/connection.php';
     include 'inc/header.inc.php';
     include 'inc/navbar.inc.php';
 ?>
     <script type='text/javascript'>
-    $(document).ready(function(){     
-        $(document).ajaxStart(function(){
+    $(document).ready(function(){ 
+
+      $(document).ajaxStart(function(){
           $('#loading').show();
             }).ajaxStop(function(){
               $('#loading').hide();
@@ -22,8 +23,7 @@
               './updateName.php',
               { 'name' : $("#getUpdatedValue").val(),'id' : $("#getServiceId").html()},
               function(ajaxresult){
-                alert(ajaxresult);
-                $("#setUpdateName").html(ajaxresult);
+                
               });
             });
         });
@@ -36,7 +36,45 @@
               './updateEmail.php',
               { 'email' : $("#getUpdatedValue").val(),'id' : $("#getServiceId").html()},
               function(ajaxresult){
-                $("#setUpdateEmail").html(ajaxresult);
+                
+              });
+            });
+        });
+
+      $("#updateQual").click(function(){
+        alert('qual k lye');
+          $("#updateValue").click(function(){
+              var v= $("#getUpdatedValue").val();
+              $.get(
+              './updateQual.php',
+              { 'qual' : $("#getUpdatedValue").val(),'id' : $("#getServiceId").html()},
+              function(ajaxresult){
+                
+              });
+            });
+        });
+
+      $("#updateAppointment").click(function(){
+        alert('app k lye');
+          $("#updateValue").click(function(){
+              var v= $("#getUpdatedValue").val();
+              $.get(
+              './updateappoint.php',
+              { 'app' : $("#getUpdatedValue").val(),'id' : $("#getServiceId").html()},
+              function(ajaxresult){
+                
+              });
+            });
+        });
+
+      $("#updateRank").click(function(){
+        alert('rank k lye');
+          $("#updateValue").click(function(){
+              var v= $("#getUpdatedValue").val();
+              $.get(
+              './updateRank.php',
+              { 'rank' : $("#getUpdatedValue").val(),'id' : $("#getServiceId").html()},
+              function(ajaxresult){
               });
             });
         });
@@ -110,45 +148,49 @@
       $fappointment = $qq6->fetch_assoc();
     }
 ?>
-  <div class="container" style="width:40%">
-    <div class="row-fluid">
-
-      <div class="panel panel-default pull-center" style="background-color:#95a5a6">
-          <?php          
-              echo "<h4 style='text-align:center; color:#fff'>Welcome</h4>";
-          ?>         
+  <div class="pull-center container" style="width:70%">
+    <div class="panel panel-default" >
+      <div class="panel-heading" style="padding:2px; font-size: 14px; color:#fff; background-color:#95a5a6">
+          <h4 style='text-align:center; color:#fff'>FACULTY</h4>
       </div>
-
-      <table class="table table-condensed" style="border: 1px solid #95a5a6">
-        <tbody style="font-family: Arial, Helvetica, sans-serif; font-size:13px;">
+    <div class="panel-body">
+      <div class="table-responsive">
+          <table class="table table-condensed table-striped">
+            <tbody style="font-size:14px;">
         
         <?php 
-          echo "<tr><td>SERVICE NO :<span id = 'getServiceId'> ".$fid['fId']."</span></td></tr>";?>
+          echo "<tr><td>SERVICE NO :<label><span id = 'getServiceId'> ".$fid['fId']."</span></label></td></tr>";?>
         <?php  
-          echo "<tr><td>NAME : <span id = 'setUpdateName'>".$fname['fName']."</span>
+          echo "<tr><td>NAME : <label><span id = 'setUpdateName'>".$fname['fName']."</span></label>
           <a class='btn btn-default btn-xs pull-right forget' id='updateName' data-toggle='modal' data-target='.forget-modal'>
           <span class='glyphicon glyphicon-pencil' aria-hidden='true'></span>Change</a></td></tr>";?>
         <?php 
-          echo "<tr><td>EMAIL : <span id = 'setUpdateEmail'>".$femail['fEmail']."</span><a  class='btn btn-default btn-xs pull-right forget' id='updateEmail' data-toggle='modal' data-target='.forget-modal'>
+          echo "<tr><td>EMAIL : <label><span id = 'setUpdateEmail'>".$femail['fEmail']."</span></label><a  class='btn btn-default btn-xs pull-right forget' id='updateEmail' data-toggle='modal' data-target='.forget-modal'>
           <span class='glyphicon glyphicon-pencil' aria-hidden='true'></span>Change</a></td></tr>";?>
         <?php  
-          echo "<tr><td>QUALIFICATION : <span id = 'setUpdateQual'>".$fqual['fQual'] ."</span><a href='javascript:;' class='btn btn-default btn-xs pull-right forget' id='updateQual' data-toggle='modal' data-target='.forget-modal' aria-label='Right Align'>
-          <span class='glyphicon glyphicon-pencil' aria-hidden='true'></span>Change</a></td></tr>";
-          echo "<tr><td>RANK : <span id = 'setUpdateRank'>".$frank['fRank'] ."</span><a href='javascript:;' class='btn btn-default btn-xs pull-right forget' id='updateRank' data-toggle='modal' data-target='.forget-modal' aria-label='Right Align'>
-          <span class='glyphicon glyphicon-pencil' aria-hidden='true'></span>Change</a></td></tr>";
-          echo "<tr><td>APPOINTMENT : <span id = 'setUpdateApp'>".$fappointment['fAppointment']."</span><a href='javascript:;' class='btn btn-default btn-xs pull-right forget' id='updateAppointment' data-toggle='modal' data-target='.forget-modal' aria-label='Right Align'>
-          <span class='glyphicon glyphicon-pencil' aria-hidden='true'></span>Change</a></td></tr>";
+          echo "<tr><td>QUALIFICATION : <label><span id = 'setUpdateQual'>".$fqual['fQual'] ."</span></label><a href='javascript:;' class='btn btn-default btn-xs pull-right forget' id='updateQual' data-toggle='modal' data-target='.forget-modal' aria-label='Right Align'>
+          <span class='glyphicon glyphicon-pencil' aria-hidden='true'></span>Change</a></td></tr>";?>
+        <?php
+          echo "<tr><td>RANK : <label><span id = 'setUpdateRank'>".$frank['fRank'] ."</span></label><a href='javascript:;' class='btn btn-default btn-xs pull-right forget' id='updateRank' data-toggle='modal' data-target='.forget-modal' aria-label='Right Align'>
+          <span class='glyphicon glyphicon-pencil' aria-hidden='true'></span>Change</a></td></tr>";?>
+        <?php
+          echo "<tr><td>APPOINTMENT : <label><span id = 'setUpdateApp'>".$fappointment['fAppointment']."</span></label><a href='javascript:;' class='btn btn-default btn-xs pull-right forget' id='updateAppointment' data-toggle='modal' data-target='.forget-modal' aria-label='Right Align'>
+          <span class='glyphicon glyphicon-pencil' aria-hidden='true'></span>Change</a></td></tr>";?>
+        <?php 
           echo "<tr><td>CHANGE PASSWORD :";
           echo "<input type='password'  id='newPassword'  placeholder='New Password'>";
-          echo "<input type='password'  id='key'  placeholder='Confirm Password'></td></tr>";
-          echo "<tr><td ><button type='button' id='submitPassword' class='btn btn-default btn-block' aria-label='Right Align'><span class='glyphicon glyphicon-ok'></span></button></td></tr>
-          ";
+          echo "<input type='password'  id='key'  placeholder='Confirm Password'><a href='javascript:;' class='btn btn-default btn-xs pull-right' id='submitPassword' aria-label='Right Align'>
+          <span class='glyphicon glyphicon-pencil' aria-hidden='true'></span>Change</a></td></tr>";
+          $reload="facultyprofile.php?SN=".$id;
+          echo "<tr><td><a id='reloadPage' href='$reload'class='btn btn-default btn-md  pull-center' style='width:30%;'aria-label='Right Align'><span class='glyphicon glyphicon-ok'></span>RELOAD</a></td></tr>";
         ?>
           
-        </tbody>
-      </table>
+       </tbody>
+          </table>
+      </div>
     </div>
   </div>
+</div>
 
 <div class="modal fade forget-modal" tabindex="-1" role="dialog" aria-labelledby="myForgetModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm">

@@ -270,9 +270,9 @@
 	<div class="row">
 		<div class="col-sm-6 col-sm-offset-5 col-xs-4 col-xs-offset-2">
 			<div class="L">
-				<div class="L1"><a href="index.php">LOGIN</a></div>
+				<div class="L1"><a href="studentlogin.php">LOGIN</a></div>
 				<div class="L3">|</div>
-				<div class="L2"><a href="">VISIT</a></div>
+				<div class="L2"><a href="index.php">VISIT</a></div>
 			</div>
 		</div>
 	</div>

@@ -10,9 +10,7 @@
  $q="SELECT DISTINCT sReg,sName,batch FROM v_stu WHERE cTitle IN (SELECT cTitle FROM  v_fac WHERE fId={$id} AND cTitle='{$course}')";
  $r=$conn->query($q);
 ?>
-<div class="row-fluid" style="margin:5px;">
-  <div class="col-md-4">
-            <!-- block -->
+  <div class="container pull-center">
     <div class="panel panel-default" >
       <div class="panel-heading" style="padding:2px; font-size: 14px; color:#fff; background-color:#95a5a6">
       Enrolled Student

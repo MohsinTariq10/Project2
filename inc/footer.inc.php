@@ -4,7 +4,7 @@
       <div class="row">
         <footer>
           <div class="pull-right ft_space">
-            <p style="color:#fff;">&copy; Naina - Umair - Mohsin - Sheroz - Haleema - Jaleed (Web developers)</p>
+            <p style="color:#fff;">&copy; DCSE UET Peshawar</p>
           </div>
         </footer>
       </div>

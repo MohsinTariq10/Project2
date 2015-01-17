@@ -12,11 +12,4 @@
 	echo "Error running query: " . mysql_error($conn);
  }
 
- $newName= "SELECT DISTINCT fName FROM fac WHERE fId={$id}";
-    $n1=$conn->query($newName);
-    if($n1->num_rows>0){
-      $fname = $n1->fetch_assoc();
-      echo $fname['fName'];
-    }
-
 ?>

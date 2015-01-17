@@ -8,7 +8,7 @@
 		$r=$conn->query($q);
 		if ($r->num_rows > 0) {
 			$_SESSION['serviceno']=$SN; 
-			header("location: facultyprofile.php?SN=".$SN); 
+			header("location: facultypage.php?FS=".$SN); 
 		}
 		else
 		{

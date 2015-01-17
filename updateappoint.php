@@ -1,11 +1,11 @@
 <?php
  include_once('database/connection.php');
- if(isset($_GET['email']) && isset($_GET['id']))
+ if(isset($_GET['app']) && isset($_GET['id']))
  	{
- 		$mail = $_GET['email'];
+ 		$appoint = $_GET['app'];
  		$id = (int)$_GET['id'];
  	}
- $updateE="UPDATE fac SET fEmail='{$mail}' WHERE fId={$id}";
+ $updateE="UPDATE fac SET fAppointment='{$appoint}' WHERE fId={$id}";
  $res=$conn->query($updateE);
 
  if (!$res) {

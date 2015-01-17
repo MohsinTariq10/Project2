@@ -60,25 +60,25 @@
     {
 
         $SN = $_POST['fno'];
-        echo $SN;
+        //echo $SN;
 
         $name = $_POST['fname'];
-        echo $name;
+        //echo $name;
 
         $mail = $_POST['fmail'];
-        echo $mail;
+        //echo $mail;
 
         $qual = $_POST['fqual'];
-        echo $qual;
+        //echo $qual;
 
         $rank = $_POST['fRank'];
-        echo $rank;
+        //echo $rank;
 
         $app = $_POST['fApp'];
-        echo $app;
+        //echo $app;
 
         $fpass = $_POST['fpass'];
-        echo $fpass;
+        //echo $fpass;
 
         $q1="INSERT INTO fac VALUES ('{$SN}','{$name}','{$mail}','{$qual}','{$rank}','{$app}','N','{$fpass}')";
         $r=$conn->query($q1);
